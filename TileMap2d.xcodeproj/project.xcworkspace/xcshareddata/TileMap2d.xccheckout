@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>392918F8-17AE-4BA2-B803-FA0220390E5D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TileMap2d</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5F3FE3B0-9B10-4185-8DE3-7516C6A181CE</key>
+		<string>https://github.com/ryanflees/TileMapCocos2d.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TileMap2d.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5F3FE3B0-9B10-4185-8DE3-7516C6A181CE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ryanflees/TileMapCocos2d.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5F3FE3B0-9B10-4185-8DE3-7516C6A181CE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5F3FE3B0-9B10-4185-8DE3-7516C6A181CE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TileMapCocos2d</string>
+		</dict>
+	</array>
+</dict>
+</plist>
