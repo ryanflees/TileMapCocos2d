@@ -13,4 +13,8 @@
     
 }
 
+-(void) showDPadAt:(CGPoint)position;
+
+-(void) showDPadAt:(CGPoint)position scale:(float) scale;
+
 @end

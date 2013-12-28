@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="64" height="64" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="Exterior_Forest_TileA2" tilewidth="16" tileheight="16">
+  <image source="../DSMaterials/Graphics/Tilesets/A2/Exterior_Forest_TileA2.png" width="512" height="384"/>
+ </tileset>
+ <tileset firstgid="769" name="Exterior_Forest_TileA4" tilewidth="16" tileheight="16">
+  <image source="../DSMaterials/Graphics/Tilesets/A4/Exterior_Forest_TileA4.png" width="512" height="480"/>
+ </tileset>
+ <tileset firstgid="1729" name="Exterior_Forest_TileA5" tilewidth="16" tileheight="16">
+  <image source="../DSMaterials/Graphics/Tilesets/A5/Exterior_Forest_TileA5.png" width="256" height="512"/>
+ </tileset>
+ <tileset firstgid="2241" name="Exterior_Forest_TileB" tilewidth="16" tileheight="16">
+  <image source="../DSMaterials/Graphics/Tilesets/B/Exterior_Forest_TileB.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="3265" name="Exterior_Forest_TileC" tilewidth="16" tileheight="16">
+  <image source="../DSMaterials/Graphics/Tilesets/C/Exterior_Forest_TileC.png" width="512" height="512"/>
+ </tileset>
+ <layer name="BackgroundLayer" width="64" height="64">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3YMQqEMAAFUcEie5P1/ifUQlmwXx+YGQjTJn+6jHVZPscZp2fje7x5W3+ejVH/+k/47otZu1/Uv/7117dw1L/+9de3iIiIiIiI+D/3//+nrbn//z9tTf3rX//617/+9a9//etf//rXv/71r3/96/9m6/7aen9tvb+23l9b76+t99fW+2vr/bX1/tp6f229v7beX1vvr63319b7a+v9tfX+2jsya9jgAEAAAA==
+  </data>
+ </layer>
+ <layer name="LanscapeLayer" width="64" height="64">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3UuQ3CQBCF4Ym8hXE0wNEBdAANcEiQckjQEkcDBmrhJUjGEjKGYOWd/5NGEzjZ590ZMwAAAAAAAAAAAAAAAAAAAABN0Qpm7VC/d1TdEPv0/+spQz/U7wPVMIH8vxop+9hx/omyTx3kXynjWjVTzQt9oVo6yH9QxqNqo9oW+k61d5CfOfcx559w/2nff3mve9vz5b3udc/j3SUzu2axTxHPXdkfFflP+n52/I9yZb85zv+S+qxUvfNvZqXJeOfpegKxGukaAEAAAA==
+  </data>
+ </layer>
+ <layer name="PathLayer" width="64" height="64">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3VMQrCQBAF0G3Um0guYjyJ4EWEnCTmmJkUaaIm1TKwvgef3fIPU0wpAAAAAAAAAAAAAAAAQCtOkT5y//Gu/3NWwcoekS4yRt477zWrYGWvyDO7RKJl/0N2iUT2b///sv9b+bxxl9LW/vdu+TLrt1s3pTSt4+iOtzQrbM3ljJbyAEAAAA==
+  </data>
+ </layer>
+ <layer name="MiscLayer" width="64" height="64">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3UzREBQRAG0M5gl0xIhUxIhEzIZJGInwD00UnNUkwN753m0NPV3+WLAAAAAAAAAAAAAAD+2aaL2Ha1r3jfkBkOBTmOOXN6mNvle//kX+ne2s5546XgzmvO3EbkKd0LrVr0Ecu+9hX1rDL7usH8rXTzp+hmeM0k+246svN+qW9mmX0+Mr++AYDvuwOIIcwUAEAAAA==
+  </data>
+ </layer>
+</map>

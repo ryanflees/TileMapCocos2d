@@ -2127,7 +2127,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2148,7 +2149,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					NDEBUG,
@@ -2181,7 +2183,7 @@
 				INFOPLIST_FILE = TileMap2d/Resources/Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/hy/Documents/Project/TileMap2d/TileMapCocos2d/TileMap2d/libs/SpiderMonkey/ios/lib,
+					./TileMap2d/libs/SpiderMonkey/ios/lib,
 				);
 				OTHER_LDFLAGS = (
 					"-lz",
@@ -2211,7 +2213,7 @@
 				INFOPLIST_FILE = TileMap2d/Resources/Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/hy/Documents/Project/TileMap2d/TileMapCocos2d/TileMap2d/libs/SpiderMonkey/ios/lib,
+					./TileMap2d/libs/SpiderMonkey/ios/lib,
 				);
 				OTHER_LDFLAGS = (
 					"-lz",

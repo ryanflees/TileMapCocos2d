@@ -21,6 +21,7 @@
 -(id) init
 {
     if ((self = [super init])) {
+        m_dpad = nil;
         [self addDPad];
     }
     return self;
@@ -30,7 +31,19 @@
 {
     m_dpad = [RCDPad node];
     [self addChild:m_dpad];
-    m_dpad.position = ccp(200, 200);
+    m_dpad.visible = NO;
+}
+
+-(void) showDPadAt:(CGPoint)position
+{
+    [self showDPadAt:position scale:1.0f];
+}
+
+-(void) showDPadAt:(CGPoint)position scale:(float)scale
+{
+    m_dpad.visible = YES;
+    m_dpad.position = position;
+    m_dpad.scale = scale;
 }
 
 @end

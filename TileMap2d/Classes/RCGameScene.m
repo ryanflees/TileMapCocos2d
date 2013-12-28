@@ -39,7 +39,7 @@
 
 -(void) addTileScene
 {
-    m_tileScene = [RCTileScene nodeWithTmxFile:@""];
+    m_tileScene = [RCTileScene nodeWithTmxFile:@"game/tilemap/game_world.tmx"];
     [self addChild:m_tileScene];
 }
 

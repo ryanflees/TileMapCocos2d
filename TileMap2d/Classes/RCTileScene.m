@@ -10,6 +10,7 @@
 
 @interface RCTileScene ()
 {
+    CCTMXTiledMap *m_tileMap;
     CCNode *m_gameNode;
 }
 @end
@@ -26,7 +27,16 @@
 {
     if ((self = [super init])) {
      
-      }
+    }
+    
+    m_gameNode = [CCNode node];
+    m_gameNode.scale = 2.0f;
+    [self addChild:m_gameNode];
+    
+    if (tmxFile && ![tmxFile isEqualToString:@""]) {
+        m_tileMap = [CCTMXTiledMap tiledMapWithTMXFile:tmxFile];
+        [m_gameNode addChild:m_tileMap];
+    }
     
     return self;
 }
