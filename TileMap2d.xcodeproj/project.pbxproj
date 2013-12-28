@@ -15,6 +15,10 @@
 		04186AE5186D3E0500E01A3D /* RCUILayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04186AE4186D3E0500E01A3D /* RCUILayer.m */; };
 		04186AEE186D3FCF00E01A3D /* RCGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 04186AED186D3FCF00E01A3D /* RCGameScene.m */; };
 		04186AF1186D3FE800E01A3D /* RCMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 04186AF0186D3FE800E01A3D /* RCMainMenu.m */; };
+		04186AF5186E963500E01A3D /* RCSpriteParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 04186AF4186E963500E01A3D /* RCSpriteParser.m */; };
+		0422D0D6186E99CC005F0A12 /* RCActor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422D0D5186E99CC005F0A12 /* RCActor.m */; };
+		0422D0DF186EC0ED005F0A12 /* RCActorTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422D0DE186EC0ED005F0A12 /* RCActorTemplate.m */; };
+		0422D0E2186EC109005F0A12 /* RCActorTemplateCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422D0E1186EC109005F0A12 /* RCActorTemplateCache.m */; };
 		6B34BFFB186C8C5100FFD541 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B34BFFA186C8C5100FFD541 /* QuartzCore.framework */; };
 		6B34BFFD186C8C5100FFD541 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B34BFFC186C8C5100FFD541 /* OpenGLES.framework */; };
 		6B34BFFF186C8C5100FFD541 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B34BFFE186C8C5100FFD541 /* OpenAL.framework */; };
@@ -249,6 +253,14 @@
 		04186AED186D3FCF00E01A3D /* RCGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCGameScene.m; path = Classes/RCGameScene.m; sourceTree = "<group>"; };
 		04186AEF186D3FE800E01A3D /* RCMainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCMainMenu.h; path = Classes/RCMainMenu.h; sourceTree = "<group>"; };
 		04186AF0186D3FE800E01A3D /* RCMainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCMainMenu.m; path = Classes/RCMainMenu.m; sourceTree = "<group>"; };
+		04186AF3186E963500E01A3D /* RCSpriteParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCSpriteParser.h; path = Classes/RCSpriteParser.h; sourceTree = "<group>"; };
+		04186AF4186E963500E01A3D /* RCSpriteParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCSpriteParser.m; path = Classes/RCSpriteParser.m; sourceTree = "<group>"; };
+		0422D0D4186E99CC005F0A12 /* RCActor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCActor.h; path = Classes/RCActor.h; sourceTree = "<group>"; };
+		0422D0D5186E99CC005F0A12 /* RCActor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCActor.m; path = Classes/RCActor.m; sourceTree = "<group>"; };
+		0422D0DD186EC0ED005F0A12 /* RCActorTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCActorTemplate.h; path = Classes/RCActorTemplate.h; sourceTree = "<group>"; };
+		0422D0DE186EC0ED005F0A12 /* RCActorTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCActorTemplate.m; path = Classes/RCActorTemplate.m; sourceTree = "<group>"; };
+		0422D0E0186EC109005F0A12 /* RCActorTemplateCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCActorTemplateCache.h; path = Classes/RCActorTemplateCache.h; sourceTree = "<group>"; };
+		0422D0E1186EC109005F0A12 /* RCActorTemplateCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCActorTemplateCache.m; path = Classes/RCActorTemplateCache.m; sourceTree = "<group>"; };
 		6B34BFF7186C8C5100FFD541 /* TileMap2d.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TileMap2d.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B34BFFA186C8C5100FFD541 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6B34BFFC186C8C5100FFD541 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -822,6 +834,7 @@
 		04186ACD186D2AB400E01A3D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				04186AF2186E86A500E01A3D /* RCSprite */,
 				04186AE2186D3DEB00E01A3D /* RC */,
 				04186AD7186D2D4000E01A3D /* RCHelper */,
 				04186AD6186D2D2100E01A3D /* RCScene */,
@@ -901,6 +914,21 @@
 				04186AF0186D3FE800E01A3D /* RCMainMenu.m */,
 			);
 			name = MainMenu;
+			sourceTree = "<group>";
+		};
+		04186AF2186E86A500E01A3D /* RCSprite */ = {
+			isa = PBXGroup;
+			children = (
+				04186AF3186E963500E01A3D /* RCSpriteParser.h */,
+				04186AF4186E963500E01A3D /* RCSpriteParser.m */,
+				0422D0E0186EC109005F0A12 /* RCActorTemplateCache.h */,
+				0422D0E1186EC109005F0A12 /* RCActorTemplateCache.m */,
+				0422D0D4186E99CC005F0A12 /* RCActor.h */,
+				0422D0D5186E99CC005F0A12 /* RCActor.m */,
+				0422D0DD186EC0ED005F0A12 /* RCActorTemplate.h */,
+				0422D0DE186EC0ED005F0A12 /* RCActorTemplate.m */,
+			);
+			name = RCSprite;
 			sourceTree = "<group>";
 		};
 		6B34BFEE186C8C5100FFD541 = {
@@ -1963,6 +1991,7 @@
 				6B34C1E3186C8C5400FFD541 /* mat3.c in Sources */,
 				6B34C176186C8C5300FFD541 /* cpConstraint.c in Sources */,
 				6B34C099186C8C5200FFD541 /* CCNode+Debug.m in Sources */,
+				0422D0DF186EC0ED005F0A12 /* RCActorTemplate.m in Sources */,
 				6B34C074186C8C5200FFD541 /* ccFPSImages.m in Sources */,
 				6B34C0FA186C8C5300FFD541 /* CCTMXXMLParser.m in Sources */,
 				6B34C12C186C8C5300FFD541 /* base64.c in Sources */,
@@ -1986,6 +2015,7 @@
 				6B34C031186C8C5200FFD541 /* CCActionCatmullRom.m in Sources */,
 				6B34C0A8186C8C5200FFD541 /* CCParticleSystem.m in Sources */,
 				6B34C2AF186C8C5700FFD541 /* jsb_CocosDenshion_functions.mm in Sources */,
+				04186AF5186E963500E01A3D /* RCSpriteParser.m in Sources */,
 				6B34C17C186C8C5300FFD541 /* cpGearJoint.c in Sources */,
 				6B34C18E186C8C5300FFD541 /* cpArray.c in Sources */,
 				6B34C2A7186C8C5700FFD541 /* jsb_CocosBuilderReader_classes.mm in Sources */,
@@ -2041,6 +2071,8 @@
 				6B34C11C186C8C5300FFD541 /* CCTouchHandler.m in Sources */,
 				6B34C096186C8C5200FFD541 /* CCMotionStreak.m in Sources */,
 				6B34C115186C8C5300FFD541 /* CCGLView.m in Sources */,
+				0422D0D6186E99CC005F0A12 /* RCActor.m in Sources */,
+				0422D0E2186EC109005F0A12 /* RCActorTemplateCache.m in Sources */,
 				6B34C2DC186C8C5800FFD541 /* jsb_cocos2d_manual.mm in Sources */,
 				6B34C30C186C8C5800FFD541 /* CCBReader.m in Sources */,
 				6B34C194186C8C5300FFD541 /* cpBody.c in Sources */,
