@@ -21,22 +21,12 @@ static RCActorPlistGenerator *m_instanceOfActorPlistGenerator = nil;
     return m_instanceOfActorPlistGenerator;
 }
 
--(id) init
-{
-    if ((self = [super init])) {
-        
-    }
-    //[self generatePlistFile:CGSizeMake(72, 128) actorName:@"hero" image:@"game/DSMaterials/Graphics/Characters/01Hero.png"];
-    
-    return self;
-}
-
 -(void) dealloc
 {
     [super dealloc];
 }
 
--(void) generateActorPlistByFolder:(NSString*)imageSavedPath
+-(void) generateActorPlistByFolder:(NSString*)imageSavedPath image:(NSString *)image
 {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSError *error = [[NSError alloc] init];
@@ -46,7 +36,7 @@ static RCActorPlistGenerator *m_instanceOfActorPlistGenerator = nil;
     {
         NSString *fileName = (NSString*)node;
         NSLog(@"fileName:%@",fileName);
-        NSString *imageFileFullPath = [@"game/DSMaterials/Graphics/Characters/" stringByAppendingString:fileName];
+        NSString *imageFileFullPath = [image stringByAppendingString:fileName];
         [self generatePlistFile:CGSizeMake(72, 128) actorName:[fileName stringByDeletingPathExtension] image:imageFileFullPath];
     }
     [error release];

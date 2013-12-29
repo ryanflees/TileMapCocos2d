@@ -44,10 +44,37 @@ static RCActorTemplateCache* m_instanceOfActorTemplateCache = nil;
     [m_actorTemplateArray release];
 }
 
--(void) addActorByImage:(NSString *)imageFile name:(NSString*) name
-{
-    [self addActorByImage:imageFile name:name actorSize:kDefaultActorSize];
-}
+//-(void) addActorByImage:(NSString *)imageFile name:(NSString*) name
+//{
+//    [self addActorByImage:imageFile name:name actorSize:kDefaultActorSize];
+//}
+
+//-(void) addActorByImage:(NSString *)imageFile name:(NSString*) name actorSize:(CGSize)size
+//{
+//    CCTexture2D *texture = [[CCTextureCache sharedTextureCache] addImage:imageFile];
+//    if (!texture) {
+//        CCLOG(@"Unable to add image file %@", imageFile);
+//        return;
+//    }
+//    
+//    CGSize actorBlockSize = CGSizeMake(size.width*kDefaultActorFrameCols
+//                                       , size.height*kDefaultActorFrameRows);
+//    int actorBlockCols = (int)(texture.contentSizeInPixels.width/actorBlockSize.width);
+//    int actorBlockRows = (int)(texture.contentSizeInPixels.height/actorBlockSize.height);
+//    int num = 0;
+//    for (int i=0; i<actorBlockRows; i++) {
+//        for (int j=0; j<actorBlockCols; j++) {
+//            float x = j * actorBlockSize.width;
+//            float y = texture.contentSize.height - (i + 1) * actorBlockSize.height;
+//            CGRect actorBlockRect = CGRectMake(x,y,actorBlockSize.width,actorBlockSize.height);
+//            RCActorTemplate *actorTemplate = [RCActorTemplate actorTemplateWithRect:actorBlockRect actorSize:size];
+//            actorTemplate.m_name = [NSString stringWithFormat:@"%@%i",name, num];
+//            [m_actorTemplateArray addObject:actorTemplate];
+//            num ++;
+//        }
+//    }
+//}
+
 
 -(void) addActorByFile:(NSString *)plistFile
 {
@@ -71,33 +98,6 @@ static RCActorTemplateCache* m_instanceOfActorTemplateCache = nil;
         [m_actorTemplateArray addObject:actorTemplate];
     }
 }
-
--(void) addActorByImage:(NSString *)imageFile name:(NSString*) name actorSize:(CGSize)size
-{
-    CCTexture2D *texture = [[CCTextureCache sharedTextureCache] addImage:imageFile];
-    if (!texture) {
-        CCLOG(@"Unable to add image file %@", imageFile);
-        return;
-    }
-    
-    CGSize actorBlockSize = CGSizeMake(size.width*kDefaultActorFrameCols
-                                       , size.height*kDefaultActorFrameRows);
-    int actorBlockCols = (int)(texture.contentSizeInPixels.width/actorBlockSize.width);
-    int actorBlockRows = (int)(texture.contentSizeInPixels.height/actorBlockSize.height);
-    int num = 0;
-    for (int i=0; i<actorBlockRows; i++) {
-        for (int j=0; j<actorBlockCols; j++) {
-            float x = j * actorBlockSize.width;
-            float y = texture.contentSize.height - (i + 1) * actorBlockSize.height;
-            CGRect actorBlockRect = CGRectMake(x,y,actorBlockSize.width,actorBlockSize.height);
-            RCActorTemplate *actorTemplate = [RCActorTemplate actorTemplateWithRect:actorBlockRect actorSize:size];
-            actorTemplate.m_name = [NSString stringWithFormat:@"%@%i",name, num];
-            [m_actorTemplateArray addObject:actorTemplate];
-            num ++;
-        }
-    }
-}
-
 
 -(RCActorTemplate*) getActorTemplateByName:(NSString*) actorName
 {

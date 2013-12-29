@@ -26,37 +26,6 @@
     [m_texture release];
 }
 
-+(id) actorTemplateWithRect:(CGRect)rect actorSize:(CGSize)actorSize
-{
-    return [[[RCActorTemplate alloc] initWithRect:rect actorSize:actorSize] autorelease];
-}
-
--(id) initWithRect:(CGRect)rect actorSize:(CGSize)actorSize
-{
-    if ((self = [super init])) {
-        m_name = nil;
-        
-        m_actionDictionary = [NSMutableDictionary dictionary];
-        [m_actionDictionary retain];
-        NSLog(@"creating template : (%f %f %f %f)", rect.origin.x, rect.origin.y, rect.size.width, rect.size.height);
-        [self parseRect:rect actorSize:actorSize];
-    }
-    return self;
-}
-
--(void) parseRect:(CGRect) rect actorSize:(CGSize) actorSize
-{
-    for (int i=0; i<kDefaultActorFrameRows; i++) {
-        for (int j=0; j<kDefaultActorFrameCols; j++) {
-            int x = rect.origin.x + j * actorSize.width;
-            int y = rect.origin.y + rect.size.height - (j+1) * actorSize.height;
-            CGRect frameRect = CGRectMake(x, y, actorSize.width, actorSize.height);
-            // todo
-        }
-    }
-}
-
-
 +(id) actorTemplateWithDict:(NSDictionary*) actorDict
 {
     return [[[self alloc] initWithDict:actorDict] autorelease];

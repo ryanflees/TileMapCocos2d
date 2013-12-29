@@ -42,28 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TileMap2d/Classes/RCActorPlistGenerator.m"
-            timestampString = "409943371.357115"
+            timestampString = "410021248.863236"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "-generateActorPlistByFolder:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TileMap2d/Classes/RCGameScene.m"
-            timestampString = "410018457.560182"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "-init"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "-generateActorPlistByFolder:image:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -74,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TileMap2d/Classes/RCActorTemplate.m"
-            timestampString = "409986935.446101"
+            timestampString = "410021248.863236"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "-initWithDict:"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TileMap2d/Classes/RCActorTemplate.m"
-            timestampString = "409986985.856005"
+            timestampString = "410021248.863236"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
             landmarkName = "-initWithDict:"
             landmarkType = "5">
          </BreakpointContent>
@@ -106,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TileMap2d/Classes/RCActor.m"
-            timestampString = "410016267.106167"
+            timestampString = "410021248.863236"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "-initWithTemplate:"
             landmarkType = "5">
          </BreakpointContent>
@@ -228,11 +212,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TileMap2d/Classes/RCActorPlistGenerator.m"
-            timestampString = "410002745.587669"
+            timestampString = "410021248.863236"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "-generatePlistFile:actorName:image:"
             landmarkType = "5">
          </BreakpointContent>
@@ -244,11 +228,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TileMap2d/Classes/RCActorPlistGenerator.m"
-            timestampString = "410002942.669157"
+            timestampString = "410021248.863236"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "-generatePlistFile:actorName:image:"
             landmarkType = "5">
          </BreakpointContent>
@@ -260,11 +244,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TileMap2d/Classes/RCActorPlistGenerator.m"
-            timestampString = "410002943.199373"
+            timestampString = "410021248.863236"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "-generatePlistFile:actorName:image:"
             landmarkType = "5">
          </BreakpointContent>
@@ -276,11 +260,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TileMap2d/Classes/RCActorPlistGenerator.m"
-            timestampString = "410003586.182289"
+            timestampString = "410021248.863236"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "-parseRect:actionArray:"
             landmarkType = "5">
             <Locations>
@@ -322,11 +306,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TileMap2d/Classes/RCGameScene.m"
-            timestampString = "410018457.560182"
+            timestampString = "410021248.863236"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "-init"
             landmarkType = "5">
          </BreakpointContent>
@@ -338,11 +322,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TileMap2d/Classes/RCActor.m"
-            timestampString = "410019149.38403"
+            timestampString = "410021248.863236"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
             landmarkName = "-onEnter"
             landmarkType = "5">
          </BreakpointContent>
@@ -354,11 +338,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TileMap2d/Classes/RCActor.m"
-            timestampString = "410019149.38403"
+            timestampString = "410021248.863236"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "162"
-            endingLineNumber = "162"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "-update:"
             landmarkType = "5">
          </BreakpointContent>
@@ -370,11 +354,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TileMap2d/Classes/RCActor.m"
-            timestampString = "410019149.38403"
+            timestampString = "410021248.863236"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "-update:"
             landmarkType = "5">
          </BreakpointContent>
@@ -386,27 +370,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TileMap2d/Classes/RCGameScene.m"
-            timestampString = "410019716.59874"
+            timestampString = "410021248.863236"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "192"
-            endingLineNumber = "192"
-            landmarkName = "-updateControllerVector:vector:delta:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TileMap2d/Classes/RCGameScene.m"
-            timestampString = "410019820.962051"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "193"
-            endingLineNumber = "193"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
             landmarkName = "-updateControllerVector:vector:delta:"
             landmarkType = "5">
          </BreakpointContent>

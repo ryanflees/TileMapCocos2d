@@ -15,7 +15,6 @@
 		04186AE5186D3E0500E01A3D /* RCUILayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04186AE4186D3E0500E01A3D /* RCUILayer.m */; };
 		04186AEE186D3FCF00E01A3D /* RCGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 04186AED186D3FCF00E01A3D /* RCGameScene.m */; };
 		04186AF1186D3FE800E01A3D /* RCMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 04186AF0186D3FE800E01A3D /* RCMainMenu.m */; };
-		04186AF5186E963500E01A3D /* RCSpriteParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 04186AF4186E963500E01A3D /* RCSpriteParser.m */; };
 		0422D0D6186E99CC005F0A12 /* RCActor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422D0D5186E99CC005F0A12 /* RCActor.m */; };
 		0422D0DF186EC0ED005F0A12 /* RCActorTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422D0DE186EC0ED005F0A12 /* RCActorTemplate.m */; };
 		0422D0E2186EC109005F0A12 /* RCActorTemplateCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422D0E1186EC109005F0A12 /* RCActorTemplateCache.m */; };
@@ -237,7 +236,7 @@
 		6B34C31F186C8C5800FFD541 /* grossini_dance_atlas.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B34C31E186C8C5800FFD541 /* grossini_dance_atlas.png */; };
 		6B34C321186C8C5800FFD541 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 6B34C320186C8C5800FFD541 /* main.js */; };
 		6BBAE8F7186F3AEB00A3B6D2 /* RCActorPlistGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBAE8F6186F3AEB00A3B6D2 /* RCActorPlistGenerator.m */; };
-		6BBAE8FA18705B4D00A3B6D2 /* RCControllerLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBAE8F918705B4D00A3B6D2 /* RCControllerLayer.m */; };
+		6BBAE8FE18706AB800A3B6D2 /* RCControllerLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBAE8FD18706AB800A3B6D2 /* RCControllerLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -255,8 +254,6 @@
 		04186AED186D3FCF00E01A3D /* RCGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCGameScene.m; path = Classes/RCGameScene.m; sourceTree = "<group>"; };
 		04186AEF186D3FE800E01A3D /* RCMainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCMainMenu.h; path = Classes/RCMainMenu.h; sourceTree = "<group>"; };
 		04186AF0186D3FE800E01A3D /* RCMainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCMainMenu.m; path = Classes/RCMainMenu.m; sourceTree = "<group>"; };
-		04186AF3186E963500E01A3D /* RCSpriteParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCSpriteParser.h; path = Classes/RCSpriteParser.h; sourceTree = "<group>"; };
-		04186AF4186E963500E01A3D /* RCSpriteParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCSpriteParser.m; path = Classes/RCSpriteParser.m; sourceTree = "<group>"; };
 		0422D0D4186E99CC005F0A12 /* RCActor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCActor.h; path = Classes/RCActor.h; sourceTree = "<group>"; };
 		0422D0D5186E99CC005F0A12 /* RCActor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCActor.m; path = Classes/RCActor.m; sourceTree = "<group>"; };
 		0422D0DD186EC0ED005F0A12 /* RCActorTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCActorTemplate.h; path = Classes/RCActorTemplate.h; sourceTree = "<group>"; };
@@ -811,8 +808,8 @@
 		6B34C320186C8C5800FFD541 /* main.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = main.js; path = Resources/main.js; sourceTree = "<group>"; };
 		6BBAE8F5186F3AEB00A3B6D2 /* RCActorPlistGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCActorPlistGenerator.h; path = Classes/RCActorPlistGenerator.h; sourceTree = "<group>"; };
 		6BBAE8F6186F3AEB00A3B6D2 /* RCActorPlistGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCActorPlistGenerator.m; path = Classes/RCActorPlistGenerator.m; sourceTree = "<group>"; };
-		6BBAE8F818705B4D00A3B6D2 /* RCControllerLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCControllerLayer.h; sourceTree = "<group>"; };
-		6BBAE8F918705B4D00A3B6D2 /* RCControllerLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCControllerLayer.m; sourceTree = "<group>"; };
+		6BBAE8FC18706AB800A3B6D2 /* RCControllerLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCControllerLayer.h; path = Classes/RCControllerLayer.h; sourceTree = "<group>"; };
+		6BBAE8FD18706AB800A3B6D2 /* RCControllerLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCControllerLayer.m; path = Classes/RCControllerLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -897,9 +894,9 @@
 			isa = PBXGroup;
 			children = (
 				04186AE3186D3E0500E01A3D /* RCUILayer.h */,
+				6BBAE8FC18706AB800A3B6D2 /* RCControllerLayer.h */,
+				6BBAE8FD18706AB800A3B6D2 /* RCControllerLayer.m */,
 				04186AE4186D3E0500E01A3D /* RCUILayer.m */,
-				6BBAE8F818705B4D00A3B6D2 /* RCControllerLayer.h */,
-				6BBAE8F918705B4D00A3B6D2 /* RCControllerLayer.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -927,8 +924,6 @@
 		04186AF2186E86A500E01A3D /* RCSprite */ = {
 			isa = PBXGroup;
 			children = (
-				04186AF3186E963500E01A3D /* RCSpriteParser.h */,
-				04186AF4186E963500E01A3D /* RCSpriteParser.m */,
 				0422D0E0186EC109005F0A12 /* RCActorTemplateCache.h */,
 				0422D0E1186EC109005F0A12 /* RCActorTemplateCache.m */,
 				0422D0D4186E99CC005F0A12 /* RCActor.h */,
@@ -1987,7 +1982,7 @@
 				6B34C2F4186C8C5800FFD541 /* jsb_system_registration.mm in Sources */,
 				6B34C0F1186C8C5300FFD541 /* CCTMXLayer.m in Sources */,
 				6B34C065186C8C5200FFD541 /* ccDeprecated.m in Sources */,
-				6BBAE8FA18705B4D00A3B6D2 /* RCControllerLayer.m in Sources */,
+				6BBAE8FE18706AB800A3B6D2 /* RCControllerLayer.m in Sources */,
 				6B34C1E1186C8C5400FFD541 /* matrix.c in Sources */,
 				6B34C1F3186C8C5400FFD541 /* vec3.c in Sources */,
 				6B34C1E5186C8C5400FFD541 /* mat4.c in Sources */,
@@ -2027,7 +2022,6 @@
 				6B34C031186C8C5200FFD541 /* CCActionCatmullRom.m in Sources */,
 				6B34C0A8186C8C5200FFD541 /* CCParticleSystem.m in Sources */,
 				6B34C2AF186C8C5700FFD541 /* jsb_CocosDenshion_functions.mm in Sources */,
-				04186AF5186E963500E01A3D /* RCSpriteParser.m in Sources */,
 				6B34C17C186C8C5300FFD541 /* cpGearJoint.c in Sources */,
 				6B34C18E186C8C5300FFD541 /* cpArray.c in Sources */,
 				6B34C2A7186C8C5700FFD541 /* jsb_CocosBuilderReader_classes.mm in Sources */,

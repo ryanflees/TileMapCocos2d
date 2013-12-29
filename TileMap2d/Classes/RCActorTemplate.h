@@ -22,8 +22,6 @@
 @property (nonatomic, retain) CCTexture2D *m_texture;
 @property (nonatomic, readonly) NSMutableDictionary *m_actionDictionary;
 
-+(id) actorTemplateWithRect:(CGRect)rect actorSize:(CGSize)actorSize;
-
 +(id) actorTemplateWithDict:(NSDictionary*) actorDict;
 
 @end

@@ -11,20 +11,7 @@
 
 @class RCActorTemplate;
 
-//typedef enum
-//{
-//    kActionMoveUp,
-//    kActionMoveDown,
-//    kActionMoveLeft,
-//    kActionMoveRight,
-//    kActionStandUp,
-//    kActionStandDown,
-//    kActionStandLeft,
-//    kActionStandRight
-//}ActorMoveDirectionEnum;
-
 @interface RCActor : CCSprite {
-    //int m_actionTag;
     NSString *m_curActionKey;
 }
 
@@ -33,7 +20,6 @@
 
 +(id) actorWithTemplate:(RCActorTemplate*) actorTemplate;
 
--(void) setActorAction:(int) action;
 -(void) setActorActionByKey:(NSString*) actionKey;
 
 @end

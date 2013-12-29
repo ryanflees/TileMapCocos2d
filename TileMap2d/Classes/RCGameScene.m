@@ -66,7 +66,6 @@ typedef enum
         [self addControllerLayer];
         [self addUILayer];
         
-        NSString *imagePath = [[CCFileUtils sharedFileUtils] fullPathForFilename:@"game/DSMaterials/Graphics/Characters/hero.png"];
         [[RCActorTemplateCache sharedActorTemplateCache] addActorByFile:@"game/DSMaterials/Graphics/Characters/hero.plist"];
         RCActorTemplate *actorTemplate = [[RCActorTemplateCache sharedActorTemplateCache] getActorTemplateByName:@"hero1"];
         
@@ -76,11 +75,9 @@ typedef enum
         [m_player setActorActionByKey:@"stand_left"];
         m_playerAction = kActionStandLeft;
         m_player.m_speed = 30;
-        //[actor setActorAction:kActionMoveLeft];
-        //[self addSprite];
         
-        NSString *folderPath = [imagePath stringByDeletingLastPathComponent];
-        //[[RCActorPlistGenerator sharedActorPlistGenerator] generateActorPlistByFolder:folderPath];
+        //NSString *folderPath = [imagePath stringByDeletingLastPathComponent];
+        //[[RCActorPlistGenerator sharedActorPlistGenerator] generateActorPlistByFolder:folderPath image:@"game/DSMaterials/Graphics/Characters/"];
         
         [self scheduleUpdate];
     }
@@ -116,18 +113,11 @@ typedef enum
     sprite.displayFrame = frame;
     [self addChild:sprite];
     sprite.position = ccp(100, 100);
-    
-   // [[RCActorTemplateCache sharedActorTemplateCache] addActorByFile:@"game/DSMaterials/Graphics/Characters/01Hero.png" name:@"hero"];
 }
 
 -(void) update:(ccTime)delta
 {
     [super update:delta];
-    
-    bool checkGameOn = YES;
-    if (checkGameOn) {
- //       CGPoint controllerVector =
-    }
 }
 
 -(void) updateControllerVector:(RCControllerLayer *)controllerLayer vector:(CGPoint)pressedVector delta:(ccTime)delta
@@ -189,7 +179,6 @@ typedef enum
         }
     }
     
-    float deltaSpeed = m_player.m_speed * delta;
     CGPoint moveOffset = getPositionOnTheCircle(CGPointZero, m_player.m_speed, delAngle);
     moveOffset = CGPointMake(moveOffset.x*delta, moveOffset.y*delta);
     NSLog(@"moveOffset : %f %f",moveOffset.x, moveOffset.y);

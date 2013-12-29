@@ -15,6 +15,6 @@
 
 +(id) sharedActorPlistGenerator;
 
--(void) generateActorPlistByFolder:(NSString*)imageSavedPath;
+-(void) generateActorPlistByFolder:(NSString*)imageSavedPath image:(NSString*)image;
 
 @end

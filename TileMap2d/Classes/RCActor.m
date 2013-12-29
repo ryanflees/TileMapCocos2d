@@ -9,15 +9,6 @@
 #import "RCActor.h"
 #import "RCActorTemplate.h"
 
-//#define kMoveUpAction @"move_up"
-//#define kMoveDownAction @"move_down"
-//#define kMoveLeftAction @"move_left"
-//#define kMoveRightAction @"move_right"
-//#define kStandDown @"stand_down"
-//#define kStandUp @"stand_up"
-//#define kStandLeft @"stand_left"
-//#define kStandRight @"stand_right"
-//
 @interface RCActor ()
 {
     NSDictionary *m_actionDictionary;
@@ -38,7 +29,6 @@
     if ((self = [super init])) {
          m_actionDictionary = [NSMutableDictionary dictionary];
         [m_actionDictionary retain];
-    //    m_actionTag = nil;
     }
     return self;
 }
@@ -66,66 +56,13 @@
         CCTexture2D *texture = actorTemplate.m_texture;
         m_texture = texture;
         [m_texture retain];
-//        NSDictionary *actionDictionary = actorTemplate.m_actionDictionary;
-//        NSDictionary *singelActionDict = [actionDictionary objectForKey:kStandDown];
-//        if (singelActionDict) {
-//            NSArray *frameArray = [singelActionDict objectForKey:@"frame_array"];
-//            NSValue *rectValue = [frameArray objectAtIndex:0];
-//            CGRect rect = [rectValue CGRectValue];
-//            CGRect newRect = CC_RECT_PIXELS_TO_POINTS(rect);
-//            CCSpriteFrame *frame = [CCSpriteFrame frameWithTexture:texture rect:newRect];
-//            [self setDisplayFrame:frame];
-//            m_actionTag = kActionMoveDown;
-//        }
-//        else
-//        {
-//            NSArray *allKeyArray = [actionDictionary allKeys];
-//            if (allKeyArray.count == 0) {
-//                NSAssert(false, @"allKeyArray count 0");
-//            }
-//            NSString *actionKey = (NSString*)[allKeyArray objectAtIndex:0];
-//            NSDictionary *actionDict = [actionDictionary objectForKey:actionKey];
-//            NSArray *frameArray = [actionDict objectForKey:@"frame_array"];
-//            NSValue *rectValue = [frameArray objectAtIndex:0];
-//            CGRect rect = [rectValue CGRectValue];
-//            CGRect newRect = CC_RECT_PIXELS_TO_POINTS(rect);
-//            CCSpriteFrame *frame = [CCSpriteFrame frameWithTexture:texture rect:newRect];
-//            [self setDisplayFrame:frame];
-//            
-//        }
+
         m_interval = 0.3f;
         m_intervalTimer = 0;
         m_frameIndex = 0;
     
     }
     return self;
-}
-
--(void) setActorAction:(int)action
-{
- //   m_actionTag = action;
- //   m_intervalTimer = 0;
- //   m_frameIndex = 0;
-
-//    NSString *actionKey = nil;
-//    if (m_actionTag == kActionStandDown) {
-//        actionKey = kStandDown;
-//    }
-//    else if (m_actionTag == kActionStandLeft)
-//    {
-//        actionKey = kStandLeft;
-//    }
-//    else if (m_actionTag == kActionStandRight)
-//    {
-//        actionKey = kStandRight;
-//    }
-//    else if (m_actionTag == kActionStandUp)
-//    {
-//        actionKey = kStandUp;
-//    }
-//    if (actionKey) {
-//        [self displayActionFirstFrame:actionKey];
-//    }
 }
 
 -(void) setActorActionByKey:(NSString*) actionKey
@@ -139,7 +76,6 @@
     }
     m_curActionKey = actionKey;
     [m_curActionKey retain];
-  //  m_actionTag = action;
     m_intervalTimer = 0;
     m_frameIndex = 0;
     [self displayActionFirstFrame:m_curActionKey];
@@ -178,33 +114,6 @@
             }
         }
     }
-    
-    //NSString *actionKey = nil;
-//    if (m_actionTag == kActionMoveDown) {
-//        actionKey = kMoveDownAction;
-//    }
-//    else if (m_actionTag == kActionMoveLeft)
-//    {
-//        actionKey = kMoveLeftAction;
-//    }
-//    else if (m_actionTag == kActionMoveRight)
-//    {
-//        actionKey = kMoveRightAction;
-//    }
-//    else if (m_actionTag == kActionMoveUp)
-//    {
-//        actionKey = kMoveUpAction;
-//    }
-//    if (actionKey) {
-//        if (m_intervalTimer >= m_interval) {
-//            [self displayNextActionFrame:actionKey];
-//            m_intervalTimer = 0;
-//        }
-//        else
-//        {
-//            m_intervalTimer += delta;
-//        }
-//    }
 }
 
 -(void) displayNextActionFrame:(NSString*)actionKey
