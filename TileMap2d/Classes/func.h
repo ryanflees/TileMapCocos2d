@@ -13,41 +13,41 @@
 #define PI 3.14159f
 #include "cocos2d.h"
 
-float squareSumRoot(CGPoint vector)
+static float squareSumRoot(CGPoint vector)
 {
     float sum = vector.x*vector.x + vector.y +vector.y;
     return sqrt(sum);
 }
 
-float degreesToRadians(float d){
+static float degreesToRadians(float d){
 	return d * (PI/180);
 }
 
-float radiansToDegrees(float r){
+static float radiansToDegrees(float r){
 	return r * (180/PI);
 }
 
-float vectorToRadians(CGPoint vector){
+static float vectorToRadians(CGPoint vector){
 	if(vector.y == 0){ vector.y = 0.000001f; }
 	float baseRadians = atan(vector.x/vector.y);
 	if(vector.y < 0){ baseRadians += PI; }	//Adjust for -Y
 	return baseRadians;
 }
 
-CGPoint radiansToVector(float radians){
+static CGPoint radiansToVector(float radians){
 	return ccp(sin(radians-PI/2), cos(radians-PI/2));
 }
 
-float distanceBetweenPoints(CGPoint p1, CGPoint p2){
+static float distanceBetweenPoints(CGPoint p1, CGPoint p2){
 	return sqrt( pow( (p1.x-p2.x) ,2) + pow( (p1.y-p2.y) ,2) );
 }
 
-CGPoint vectorDistanceBetweenPoints(CGPoint p1,CGPoint p2)
+static CGPoint vectorDistanceBetweenPoints(CGPoint p1,CGPoint p2)
 {
     return ccp(p1.x-p2.x, p1.y-p2.y);
 }
 
-bool pointIsInRect(CGPoint p, CGRect r){
+static bool pointIsInRect(CGPoint p, CGRect r){
 	bool isInRect = false;
 	if( p.x < r.origin.x + r.size.width && 
 	   p.x > r.origin.x &&
@@ -59,7 +59,7 @@ bool pointIsInRect(CGPoint p, CGRect r){
 	return isInRect;
 }
 
-bool pointIsInCircle(CGPoint p, CGPoint origin, float radius){
+static bool pointIsInCircle(CGPoint p, CGPoint origin, float radius){
 	bool isInCircle = false;
 	if(distanceBetweenPoints(p, origin) <= radius){
 		isInCircle = true;
@@ -67,7 +67,7 @@ bool pointIsInCircle(CGPoint p, CGPoint origin, float radius){
 	return isInCircle;
 }
 
-float angleDifference(float angleA, float angleB){
+static float angleDifference(float angleA, float angleB){
 	float diff = fabs(angleA-angleB);
 	if(fabs((angleA+360)-angleB) < diff){
 		diff = fabs((angleA+360)-angleB);
@@ -84,26 +84,26 @@ float angleDifference(float angleA, float angleB){
 	return diff;
 }
 
-float absoluteValue(float num){
+static float absoluteValue(float num){
 	if(num < 0){
 		num = num * -1;
 	}
 	return num;
 }
 
-float convertPositionX(CGPoint areaSize, float x){
+static float convertPositionX(CGPoint areaSize, float x){
 	return x - (areaSize.x/2);
 }
 
-float convertPositionY(CGPoint areaSize, float y){
+static float convertPositionY(CGPoint areaSize, float y){
 	return y - (areaSize.y/2);
 }
 
-CGPoint midPoint(CGPoint p1, CGPoint p2){
+static CGPoint midPoint(CGPoint p1, CGPoint p2){
 	return ccp( (p1.x+p2.x)/2 , (p1.y+p2.y)/2 );
 }
 
-CGPoint getPositionOnTheCircle(CGPoint center,float radius,int angle)
+static CGPoint getPositionOnTheCircle(CGPoint center,float radius,int angle)
 {
     CGPoint pos;
     

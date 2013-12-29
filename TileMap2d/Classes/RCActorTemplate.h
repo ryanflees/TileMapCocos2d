@@ -9,12 +9,21 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 
+#define kDefaultActorFrameCols 3
+#define kDefaultActorFrameRows 4
+
 @interface RCActorTemplate : CCNode {
     NSString *m_name;
+    CCTexture2D *m_texture;
+    NSMutableDictionary *m_actionDictionary;
 }
 
 @property (nonatomic, retain) NSString *m_name;
+@property (nonatomic, retain) CCTexture2D *m_texture;
+@property (nonatomic, readonly) NSMutableDictionary *m_actionDictionary;
 
 +(id) actorTemplateWithRect:(CGRect)rect actorSize:(CGSize)actorSize;
+
++(id) actorTemplateWithDict:(NSDictionary*) actorDict;
 
 @end

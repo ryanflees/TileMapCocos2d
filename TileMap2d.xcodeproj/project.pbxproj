@@ -236,6 +236,8 @@
 		6B34C31D186C8C5800FFD541 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B34C31C186C8C5800FFD541 /* AppDelegate.mm */; };
 		6B34C31F186C8C5800FFD541 /* grossini_dance_atlas.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B34C31E186C8C5800FFD541 /* grossini_dance_atlas.png */; };
 		6B34C321186C8C5800FFD541 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 6B34C320186C8C5800FFD541 /* main.js */; };
+		6BBAE8F7186F3AEB00A3B6D2 /* RCActorPlistGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBAE8F6186F3AEB00A3B6D2 /* RCActorPlistGenerator.m */; };
+		6BBAE8FA18705B4D00A3B6D2 /* RCControllerLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBAE8F918705B4D00A3B6D2 /* RCControllerLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -807,6 +809,10 @@
 		6B34C31C186C8C5800FFD541 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		6B34C31E186C8C5800FFD541 /* grossini_dance_atlas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grossini_dance_atlas.png; path = Resources/grossini_dance_atlas.png; sourceTree = "<group>"; };
 		6B34C320186C8C5800FFD541 /* main.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = main.js; path = Resources/main.js; sourceTree = "<group>"; };
+		6BBAE8F5186F3AEB00A3B6D2 /* RCActorPlistGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCActorPlistGenerator.h; path = Classes/RCActorPlistGenerator.h; sourceTree = "<group>"; };
+		6BBAE8F6186F3AEB00A3B6D2 /* RCActorPlistGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCActorPlistGenerator.m; path = Classes/RCActorPlistGenerator.m; sourceTree = "<group>"; };
+		6BBAE8F818705B4D00A3B6D2 /* RCControllerLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCControllerLayer.h; sourceTree = "<group>"; };
+		6BBAE8F918705B4D00A3B6D2 /* RCControllerLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCControllerLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -892,6 +898,8 @@
 			children = (
 				04186AE3186D3E0500E01A3D /* RCUILayer.h */,
 				04186AE4186D3E0500E01A3D /* RCUILayer.m */,
+				6BBAE8F818705B4D00A3B6D2 /* RCControllerLayer.h */,
+				6BBAE8F918705B4D00A3B6D2 /* RCControllerLayer.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -927,6 +935,8 @@
 				0422D0D5186E99CC005F0A12 /* RCActor.m */,
 				0422D0DD186EC0ED005F0A12 /* RCActorTemplate.h */,
 				0422D0DE186EC0ED005F0A12 /* RCActorTemplate.m */,
+				6BBAE8F5186F3AEB00A3B6D2 /* RCActorPlistGenerator.h */,
+				6BBAE8F6186F3AEB00A3B6D2 /* RCActorPlistGenerator.m */,
 			);
 			name = RCSprite;
 			sourceTree = "<group>";
@@ -1977,6 +1987,7 @@
 				6B34C2F4186C8C5800FFD541 /* jsb_system_registration.mm in Sources */,
 				6B34C0F1186C8C5300FFD541 /* CCTMXLayer.m in Sources */,
 				6B34C065186C8C5200FFD541 /* ccDeprecated.m in Sources */,
+				6BBAE8FA18705B4D00A3B6D2 /* RCControllerLayer.m in Sources */,
 				6B34C1E1186C8C5400FFD541 /* matrix.c in Sources */,
 				6B34C1F3186C8C5400FFD541 /* vec3.c in Sources */,
 				6B34C1E5186C8C5400FFD541 /* mat4.c in Sources */,
@@ -2011,6 +2022,7 @@
 				6B34C100186C8C5300FFD541 /* CCTransitionPageTurn.m in Sources */,
 				6B34C19E186C8C5300FFD541 /* cpSpace.c in Sources */,
 				6B34C1AC186C8C5300FFD541 /* cpVect.c in Sources */,
+				6BBAE8F7186F3AEB00A3B6D2 /* RCActorPlistGenerator.m in Sources */,
 				6B34C29B186C8C5700FFD541 /* jsb_cocos2d_ios_functions.mm in Sources */,
 				6B34C031186C8C5200FFD541 /* CCActionCatmullRom.m in Sources */,
 				6B34C0A8186C8C5200FFD541 /* CCParticleSystem.m in Sources */,

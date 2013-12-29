@@ -9,7 +9,7 @@
 #import "RCActorTemplateCache.h"
 #import "RCActorTemplate.h"
 
-#define kDefaultActorSize CGSizeMake(23,32)
+#define kDefaultActorSize CGSizeMake(24,32)
 
 @interface RCActorTemplateCache ()
 {
@@ -44,12 +44,35 @@ static RCActorTemplateCache* m_instanceOfActorTemplateCache = nil;
     [m_actorTemplateArray release];
 }
 
--(void) addActorByFile:(NSString *)imageFile name:(NSString*) name
+-(void) addActorByImage:(NSString *)imageFile name:(NSString*) name
 {
-    [self addActorByFile:imageFile name:name actorSize:kDefaultActorSize];
+    [self addActorByImage:imageFile name:name actorSize:kDefaultActorSize];
 }
 
--(void) addActorByFile:(NSString *)imageFile name:(NSString*) name actorSize:(CGSize)size
+-(void) addActorByFile:(NSString *)plistFile
+{
+    NSString *path = [[CCFileUtils sharedFileUtils] fullPathForFilename:plistFile];
+    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
+    
+    NSArray *actorArray = (NSArray*)[dict objectForKey:@"actor_array"];
+    for (id node in actorArray) {
+        NSDictionary *actorDict = (NSDictionary*)node;
+        NSString *textureFile = [actorDict objectForKey:@"texture"];
+        NSString *textureFolder = [plistFile stringByDeletingLastPathComponent];
+        NSString *texturePath = nil;
+        texturePath = [textureFolder stringByAppendingPathComponent:textureFile];
+		CCTexture2D *texture =[[CCTextureCache sharedTextureCache] addImage:texturePath];
+        if (!texture) {
+            NSLog(@"failed to load texture %@",texturePath);
+            continue;
+        }
+        RCActorTemplate *actorTemplate = [RCActorTemplate actorTemplateWithDict:actorDict];
+        actorTemplate.m_texture = texture;
+        [m_actorTemplateArray addObject:actorTemplate];
+    }
+}
+
+-(void) addActorByImage:(NSString *)imageFile name:(NSString*) name actorSize:(CGSize)size
 {
     CCTexture2D *texture = [[CCTextureCache sharedTextureCache] addImage:imageFile];
     if (!texture) {
@@ -57,14 +80,15 @@ static RCActorTemplateCache* m_instanceOfActorTemplateCache = nil;
         return;
     }
     
-    CGSize actorBlockSize = CGSizeMake(size.width*3, size.height*4);
-    int actorBlockCol = (int)(texture.contentSizeInPixels.width/actorBlockSize.width);
-    int actorBlockRow = (int)(texture.contentSizeInPixels.height/actorBlockSize.height);
+    CGSize actorBlockSize = CGSizeMake(size.width*kDefaultActorFrameCols
+                                       , size.height*kDefaultActorFrameRows);
+    int actorBlockCols = (int)(texture.contentSizeInPixels.width/actorBlockSize.width);
+    int actorBlockRows = (int)(texture.contentSizeInPixels.height/actorBlockSize.height);
     int num = 0;
-    for (int i=0; i<actorBlockRow; i++) {
-        for (int j=0; j<actorBlockCol; j++) {
+    for (int i=0; i<actorBlockRows; i++) {
+        for (int j=0; j<actorBlockCols; j++) {
             float x = j * actorBlockSize.width;
-            float y = texture.contentSize.height - i * actorBlockSize.height;
+            float y = texture.contentSize.height - (i + 1) * actorBlockSize.height;
             CGRect actorBlockRect = CGRectMake(x,y,actorBlockSize.width,actorBlockSize.height);
             RCActorTemplate *actorTemplate = [RCActorTemplate actorTemplateWithRect:actorBlockRect actorSize:size];
             actorTemplate.m_name = [NSString stringWithFormat:@"%@%i",name, num];
@@ -74,9 +98,24 @@ static RCActorTemplateCache* m_instanceOfActorTemplateCache = nil;
     }
 }
 
+
+-(RCActorTemplate*) getActorTemplateByName:(NSString*) actorName
+{
+    RCActorTemplate *result = nil;
+    for (id node in m_actorTemplateArray) {
+        RCActorTemplate *actorTemplate = (RCActorTemplate*)node;
+        if ([actorTemplate.m_name isEqualToString:actorName]) {
+            result = actorTemplate;
+            break;
+        }
+    }
+    return result;
+}
+
 -(void) dumpAllActorTemplates
 {
     [m_actorTemplateArray removeAllObjects];
 }
+
 
 @end

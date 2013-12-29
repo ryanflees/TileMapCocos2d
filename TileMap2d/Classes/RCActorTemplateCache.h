@@ -9,25 +9,36 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 
+@class RCActorTemplate;
+
 @interface RCActorTemplateCache : CCNode {
     
 }
 
 +(RCActorTemplateCache*) sharedActorTemplateCache;
 
-/** Load actors by an image file.
-    Actors will be automatically divided as 23*32 pixels in 9 grids.
-    Image may generate several actors if the size is big enough
+/**
+ Load actors by plist file
  */
--(void) addActorByFile:(NSString*) imageFile name:(NSString*) name;
+-(void) addActorByFile:(NSString*) plistFile;
+
+/** Load actors by an image file.
+    Actors will be automatically divided as 24*32 pixels in 9 grids.
+    Image may generate several actors if the size is big enough
+    Unimpelemented.
+ */
+-(void) addActorByImage:(NSString*) imageFile name:(NSString*) name;
 
 /** Load actors by an image file.
  Actors will be automatically divided as given size pixels in 9 grids.
  Image may generate several actors if the size is big enough
+ Unimpelemented.
  */
--(void) addActorByFile:(NSString *)imageFile name:(NSString*) name actorSize:(CGSize) size;
+-(void) addActorByImage:(NSString *)imageFile name:(NSString*) name actorSize:(CGSize) size;
 
-/** Dump all actor template
+-(RCActorTemplate*) getActorTemplateByName:(NSString*) actorName;
+
+/** Dump all actor templates.
  */
 -(void) dumpAllActorTemplates;
 
