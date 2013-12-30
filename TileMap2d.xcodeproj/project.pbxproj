@@ -871,6 +871,7 @@
 		04186AD6186D2D2100E01A3D /* RCScene */ = {
 			isa = PBXGroup;
 			children = (
+				04A6BB33187179340094B6F1 /* LoadingScene */,
 				04186AEB186D3E6600E01A3D /* MainMenu */,
 				04186AEA186D3E5C00E01A3D /* Game */,
 				04186AE9186D3E5400E01A3D /* UI */,
@@ -907,7 +908,7 @@
 		04186AEA186D3E5C00E01A3D /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				04A6BB23187138840094B6F1 /* RCTileMap */,
+				04A6BB23187138840094B6F1 /* TileMap */,
 				04186AEC186D3FCF00E01A3D /* RCGameScene.h */,
 				04186AED186D3FCF00E01A3D /* RCGameScene.m */,
 			);
@@ -938,7 +939,7 @@
 			name = RCSprite;
 			sourceTree = "<group>";
 		};
-		04A6BB23187138840094B6F1 /* RCTileMap */ = {
+		04A6BB23187138840094B6F1 /* TileMap */ = {
 			isa = PBXGroup;
 			children = (
 				04186ADC186D2DA400E01A3D /* RCTileWorld.h */,
@@ -946,7 +947,14 @@
 				04A6BB2518713C0B0094B6F1 /* RCActorController.h */,
 				04A6BB2618713C0B0094B6F1 /* RCActorController.m */,
 			);
-			name = RCTileMap;
+			name = TileMap;
+			sourceTree = "<group>";
+		};
+		04A6BB33187179340094B6F1 /* LoadingScene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = LoadingScene;
 			sourceTree = "<group>";
 		};
 		6B34BFEE186C8C5100FFD541 = {
