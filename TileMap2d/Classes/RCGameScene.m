@@ -7,7 +7,7 @@
 //
 
 #import "RCGameScene.h"
-#import "RCTileScene.h"
+#import "RCTileWorld.h"
 #import "RCUILayer.h"
 #import "RCActor.h"
 #import "RCActorTemplateCache.h"
@@ -38,7 +38,7 @@ typedef enum
 
 @interface RCGameScene () <RCControllerLayerDelegate>
 {
-    RCTileScene* m_tileScene;
+    RCTileWorld* m_tileScene;
     RCUILayer* m_uiLayer;
     RCControllerLayer *m_controllerLayer;
     
@@ -54,7 +54,7 @@ typedef enum
 +(id) scene
 {
     CCScene *scene = [CCScene node];
-    RCTileScene *layer = [RCGameScene node];
+    RCGameScene *layer = [RCGameScene node];
     [scene addChild:layer];
     return scene;
 }
@@ -86,7 +86,7 @@ typedef enum
 
 -(void) addTileScene
 {
-    m_tileScene = [RCTileScene nodeWithTmxFile:@"game/tilemap/game_world.tmx"];
+    m_tileScene = [RCTileWorld nodeWithTmxFile:@"game/tilemap/game_world.tmx"];
     [self addChild:m_tileScene];
 }
 

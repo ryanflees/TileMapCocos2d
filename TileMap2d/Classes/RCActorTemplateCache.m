@@ -117,5 +117,4 @@ static RCActorTemplateCache* m_instanceOfActorTemplateCache = nil;
     [m_actorTemplateArray removeAllObjects];
 }
 
-
 @end

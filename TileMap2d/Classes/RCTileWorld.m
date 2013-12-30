@@ -6,20 +6,22 @@
 //  Copyright 2013 Bai Ryan. All rights reserved.
 //
 
-#import "RCTileScene.h"
+#import "RCTileWorld.h"
+#import "RCActorController.h"
 
-@interface RCTileScene ()
+@interface RCTileWorld ()
 {
     CCTMXTiledMap *m_tileMap;
     CCNode *m_gameNode;
+    RCActorController* m_actorController;
 }
 @end
 
-@implementation RCTileScene
+@implementation RCTileWorld
 
 +(id) nodeWithTmxFile:(NSString*) tmxFile
 {
-    RCTileScene *layer = [[[RCTileScene alloc] initWithTxmFile:tmxFile] autorelease];
+    RCTileWorld *layer = [[[RCTileWorld alloc] initWithTxmFile:tmxFile] autorelease];
     return layer;
 }
 
@@ -37,6 +39,9 @@
         m_tileMap = [CCTMXTiledMap tiledMapWithTMXFile:tmxFile];
         [m_gameNode addChild:m_tileMap];
     }
+    
+    m_actorController = [RCActorController node];
+    [self addChild:m_actorController];
     
     return self;
 }

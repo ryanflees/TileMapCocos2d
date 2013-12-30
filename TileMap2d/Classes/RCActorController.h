@@ -1,18 +1,16 @@
 //
-//  RCTileScene.h
+//  RCActorController.h
 //  TileMap2d
 //
-//  Created by hy on 12/27/13.
+//  Created by hy on 12/30/13.
 //  Copyright 2013 Bai Ryan. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 
-@interface RCTileScene : CCLayer {
+@interface RCActorController : CCNode {
     
 }
-
-+(id) nodeWithTmxFile:(NSString*) tmxFile;
 
 @end
